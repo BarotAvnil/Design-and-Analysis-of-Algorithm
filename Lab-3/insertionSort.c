@@ -1,4 +1,7 @@
 #include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+
 int insertionSort(int arr[], int n){
     int i,j,key;
     for ( i = 1; i < n; i++)
@@ -119,4 +122,16 @@ int main() {
     for (int i = 0; i < n; i++) {
         fscanf(file, "%d", &arr[i]);
     }
+    fclose(file);
+
+    printf("Best Case Scenario:\n");
+
+    start = clock();
+    bubbleSort(arr, n);
+    end = clock();
+
+    cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("Time taken: %f seconds\n", cpu_time_used);
+
+    return 0;
 }

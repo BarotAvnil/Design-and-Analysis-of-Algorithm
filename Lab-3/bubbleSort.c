@@ -62,20 +62,6 @@ int bubbleSort(int arr[], int n){
 //     double cpu_time_used;
 //     int arr[100000];
 //     int n = 10000;
-
-
-//     file = fopen("random.txt", "w");
-//     if (file == NULL) {
-//         printf("Failed to create file.\n");
-//         return 1;
-//     }
-
-//     for (int i = 0; i < n; i++) {
-//         fprintf(file, "%d ", rand() % 100000);
-//     }
-//     fclose(file);
-
-
 //     file = fopen("random.txt", "r");
 //     if (file == NULL) {
 //         printf("Failed to open file.\n");
